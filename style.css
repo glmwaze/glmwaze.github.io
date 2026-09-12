@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Montserrat,Arial,sans-serif;background:#050505;color:#f7f7f7;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.header{position:fixed;top:0;left:0;right:0;z-index:10;height:76px;display:flex;align-items:center;justify-content:space-between;padding:10px 6%;background:rgba(5,5,5,.88);backdrop-filter:blur(12px);border-bottom:1px solid #222}
+.brand img{height:52px;width:auto;display:block}
+.nav{display:flex;gap:28px;font-size:13px;font-weight:600;text-transform:uppercase}
+.nav a:hover{opacity:.65}
+.menu-btn{display:none;background:none;border:0;color:#fff;font-size:28px}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 8% 80px;background:radial-gradient(circle at 75% 35%,#252525 0,#0a0a0a 32%,#050505 68%)}
+.hero-content{max-width:780px}
+.eyebrow{font-size:12px;letter-spacing:4px;font-weight:700;color:#aaa;margin-bottom:16px}
+h1{font-size:clamp(52px,9vw,105px);line-height:.96;letter-spacing:-4px;text-transform:uppercase}
+h1 span{color:#aaa}
+.lead{font-size:17px;font-weight:600;letter-spacing:2px;margin:26px 0 10px}
+.intro{max-width:620px;color:#bcbcbc;font-size:16px}
+.buttons{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.btn{padding:14px 22px;border:1px solid #fff;font-weight:700;font-size:13px;text-transform:uppercase}
+.primary{background:#fff;color:#050505}.outline:hover{background:#fff;color:#050505}
+.section{padding:110px 8%;border-top:1px solid #1d1d1d}
+.section h2{font-size:clamp(32px,5vw,58px);line-height:1.05;letter-spacing:-2px;margin-bottom:22px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.about>p{color:#bdbdbd;font-size:18px;max-width:650px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.card{border:1px solid #252525;padding:28px;min-height:220px;background:#090909}
+.card span{font-size:12px;color:#777;font-weight:700}.card h3{font-size:21px;margin:30px 0 10px}.card p{color:#999;font-size:14px}
+.card:hover{border-color:#777;transform:translateY(-3px);transition:.25s}
+.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:35px}
+.project{height:180px;border:1px solid #282828;display:flex;align-items:end;padding:18px;font-size:12px;letter-spacing:2px;font-weight:700;background:linear-gradient(145deg,#1b1b1b,#070707)}
+.small{color:#777;font-size:12px;margin-top:16px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.contact-box{display:grid;gap:12px}.contact-box>a,.contact-box>div{border:1px solid #292929;padding:18px;color:#aaa}.contact-box a:hover{color:#fff;border-color:#777}
+.contact-box strong{color:#fff;font-size:13px;text-transform:uppercase}
+footer{border-top:1px solid #222;padding:35px 8%;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#777;font-size:12px}
+footer img{height:42px;width:auto}
+@media(max-width:800px){
+ .header{height:66px;padding:8px 5%}.brand img{height:44px}.menu-btn{display:block}.nav{display:none;position:absolute;top:66px;left:0;right:0;background:#070707;padding:20px 5%;flex-direction:column;gap:18px;border-bottom:1px solid #222}.nav.open{display:flex}
+ .hero{padding:110px 6% 70px}.about,.contact{grid-template-columns:1fr;gap:35px}.cards{grid-template-columns:1fr 1fr}.portfolio-grid{grid-template-columns:1fr 1fr}h1{letter-spacing:-2px}
+}
+@media(max-width:500px){.cards,.portfolio-grid{grid-template-columns:1fr}.card{min-height:auto}.section{padding:80px 6%}footer{flex-direction:column;align-items:flex-start}}
